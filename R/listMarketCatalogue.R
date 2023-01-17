@@ -166,7 +166,7 @@
 #'
 
 listMarketCatalogue <-
-  function(eventTypeIds, marketTypeCodes, maxResults = "200",
+  function(eventTypeIds = NULL, marketTypeCodes = NULL, maxResults = "200",
           fromDate = (format(Sys.time() - 7200, "%Y-%m-%dT%TZ", tz = "UTC")),
           toDate = (format(Sys.time() + 86400, "%Y-%m-%dT%TZ", tz = "UTC")),
           eventIds = NULL,competitionIds = NULL,marketIds = NULL,
